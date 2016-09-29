@@ -1,0 +1,72 @@
+﻿@model Teste.WebMvc.Models.Home.Principal
+@using System.Web.Optimization
+@{
+    ViewBag.Title = "Index";
+}
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/Content/Scripts/Index.js")
+@Styles.Render("~/Content/Bootstrap/bootstrap.css")
+@Styles.Render("~/Content/css/site.css")
+@Scripts.Render("~/Content/Bootstrap/bootstrap.js")
+
+
+<script type="text/javascript">
+    var Url = new Object();
+    Url.GetToken = "@Url.Action("GetToken")";
+    Url.GetProductsApi = "http://localhost:61607/Api/Produto";
+</script>
+
+<form action="@Url.Action("Index")" method="POST">
+    
+    @{
+        var strExpiration = Model.ExpirationDate != null ? Model.ExpirationDate.ToString() : string.Empty;
+    }
+
+    <input type="hidden" name="ErrorMessage" id="ErrorMessage" value="@Model.ErrorMessage"/>
+    @Html.Hidden("ExpirationDate", Model.ExpirationDate != null ? Model.ExpirationDate.ToString() : string.Empty)
+    @Html.Hidden("Token", Model.Token)
+
+
+    <div class="container">
+        <div class="left" style="margin: 10px;">
+            <input type="button" id="generateToken" value="Gerar Token" class="btn btn-lg" />
+        </div>
+
+        <div class="right">
+            <div>
+                Token:
+            <label id="lblToken"></label>
+            </div>
+            <div>
+                Token Expira em:
+            <label id="lblExpiracao"></label>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="container">
+
+        <div class="botoes">
+            <div>
+                <input type="submit" id="getProductsMvc" value="Buscar Produtos MVC" class="btn btn-lg" />
+            </div>
+            <div>
+                <input type="button" id="getProductsAjax" value="Buscar Produtos Ajax" class="btn btn-lg" />
+            </div>
+        </div>
+
+        <table id="table" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>@Html.Partial("_ListaProdutos")</tbody>
+        </table>
+
+    </div>
+</form>

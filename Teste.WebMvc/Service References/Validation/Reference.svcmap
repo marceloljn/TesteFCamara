@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e4c385df-ae6b-47ba-945b-7904be5a6204" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61775/Validation.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Validation.xsd" MetadataType="Schema" ID="47d6ccf7-d4f2-48fa-9c3e-282e83ad1f7f" SourceId="1" SourceUrl="http://localhost:61775/Validation.svc?xsd=xsd0" />
+    <MetadataFile FileName="Validation.disco" MetadataType="Disco" ID="aa74f688-6cd6-4b66-828e-9ccc994bb493" SourceId="1" SourceUrl="http://localhost:61775/Validation.svc?disco" />
+    <MetadataFile FileName="Validation1.xsd" MetadataType="Schema" ID="ba21928a-03d1-497e-b950-9b0804d57987" SourceId="1" SourceUrl="http://localhost:61775/Validation.svc?xsd=xsd1" />
+    <MetadataFile FileName="Validation.wsdl" MetadataType="Wsdl" ID="59bbb8e2-3c8e-49e1-9404-ded5303cc894" SourceId="1" SourceUrl="http://localhost:61775/Validation.svc?wsdl" />
+    <MetadataFile FileName="Validation2.xsd" MetadataType="Schema" ID="7e5231b9-1b36-4bc6-be56-cc85c512faef" SourceId="1" SourceUrl="http://localhost:61775/Validation.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

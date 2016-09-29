@@ -1,0 +1,5 @@
+C:\git\TesteFCamara\TesteFCamara\Teste.Wcf\bin\Teste.Wcf.dll
+C:\git\TesteFCamara\TesteFCamara\Teste.Wcf\bin\Teste.Wcf.pdb
+C:\git\TesteFCamara\TesteFCamara\Teste.Wcf\obj\Debug\Teste.Wcf.csprojResolveAssemblyReference.cache
+C:\git\TesteFCamara\TesteFCamara\Teste.Wcf\obj\Debug\Teste.Wcf.dll
+C:\git\TesteFCamara\TesteFCamara\Teste.Wcf\obj\Debug\Teste.Wcf.pdb

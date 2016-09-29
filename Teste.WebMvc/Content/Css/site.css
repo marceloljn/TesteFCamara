@@ -1,0 +1,21 @@
+﻿.left {
+    float: left;
+}
+
+.right {
+    width: 400px;
+    float: right;
+}
+
+.botoes {
+    margin: 10px 0;
+}
+
+.botoes div{
+    display: inline-block;
+}
+
+tr th {
+    background-color: lightsteelblue;
+    color: white;
+}

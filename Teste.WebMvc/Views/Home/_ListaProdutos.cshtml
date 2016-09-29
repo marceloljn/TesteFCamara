@@ -1,0 +1,16 @@
+﻿@model Teste.WebMvc.Models.Home.Principal
+
+@{
+    if (Model != null && Model.Produtos != null && Model.Produtos.Any())
+    {
+        foreach (var produto in Model.Produtos)
+        {
+            <tr>
+                <td>@produto.id_produto</td>
+                <td>@produto.nm_produto</td>
+                <td>@produto.ds_produto</td>
+                <td>@produto.vl_produto.ToString("##.###")</td>
+            </tr>
+        }
+    }
+} 
